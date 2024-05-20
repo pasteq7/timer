@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="style.css">
+  <title>Timer</title>
+</head>
+<body>
+  <div class="container">
+    <div class="timer" aria-live="assertive">
+      <span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+    <div class="controls">
+      <div class="time-buttons">
+        <button data-time="10" aria-label="Set timer for 10 minutes">10 min</button>
+        <button data-time="30" aria-label="Set timer for 30 minutes">30 min</button>
+        <button data-time="60" aria-label="Set timer for 60 minutes">60 min</button>
+      </div>
+      <input type="number" id="custom-time" placeholder="Enter a time in minutes" class="custom-time-input" min="1">
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
